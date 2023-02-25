@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Ludi Print </title>
+    <link rel="stylesheet" href="../css/carrinho.css"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="imagem/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<header>
+        <a href="http://127.0.0.1:5502/html/login.html">
+            <img src="../img/favicon.ico" alt="" width="90rem" height="90rem">
+    </a>
+           
+
+</header>
+
+
+
+<body>
+
+<section id="content-main" class="content-main-cols-1">
+    <div class="container-12">
+        <div class="grid-12">
+            <div id="vitrine">
+                <div class="element-content">
+                    <div class="one-step-checkout-wrapper">
+                        <div class="bx-wrapper horizontal" style="max-width: 100%; margin: 0px auto;">
+                            <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 565px;">
+                                <ul id="one-step-checkout-main" data-gapageview="1" data-pixelevent="1" style="width: 515%; position: relative; left: 0px;">
+                                    <li id="cart-products" style="float: left; list-style: none; position: relative; width: 1150px;" class="one-step-checkout-item"></li>            
+                                        <div class="shopping-cart-empty">
+                                            <span class="shopping-cart-label-empty">Seu carrinho está vazio</span>
+                                        </div>
+                                        
+                                        <li id="cart-email" style="float: left; list-style: none; position: relative; width: 1150px;" class="one-step-checkout-item"></li>
+                                            <div class="box-loading" style="display: none;"></div>
+                                        <div class="header-box-content"></div>
+                                        <h2>Finalizar Compra</h2>
+                                            </div>
+
+                                        <div class="row row-actions">
+                                             <a class="link" href="#">« Continuar Comprando</a>
+                                        </div>
+                                        <div class="cart-data-btn-holder cart-slider-submit pull-right">
+                                            <a href="#" class="btn btn-dbclick btn-cart-submit" id="cart-data-btn" onclick="gtag('event', 'begin_checkout');">
+                                            <span class="btn-icon icon-arrow-right"></span>
+                                            <span class="btn-text">Fechar Pedido</span>
+                                        </a>
+                                        </div>
+
+                                        <div id="cart-products-table">
+                                            <div class="cart-products-header">
+                                                <div class="cart-item-product">Produto</div>
+                                                <div class="cart-item-price-holder">Preço</div>
+                                                <div class="cart-item-amount-holder">Quantidade</div>
+                                                <div class="cart-item-total-holder">Total</div>
+                                            </div>
+                                                <ul class="cart-products-list">
+                                                    <li class="cart-products-list-item">
+                                                        <div class="cart-item-name-holder">
+                                                        <div class="cart-item-image-holder">
+                                                            <a href="/escolar/borracha/borracha-tecnica-grande-hi-polymer-pentel--p" title="Borracha técnica grande HI-POLYMER Pentel" class="cart-item-image">
+                                                                <img src="https://77739.cdn.simplo7.net/static/77739/sku/cart_borracha_tecnica_grande_hi_polymer_pentel_7379_1_20201214192222.png" width="100rem" height="100rem">
+                                                            </a>
+                                                        </div>
+                                                            <div class="cart-item-name">
+                                                                <a href="/escolar/borracha/borracha-tecnica-grande-hi-polymer-pentel--p" title="Borracha técnica grande HI-POLYMER Pentel">Borracha técnica grande HI-POLYMER Pentel</a>
+                                                                <div class="cart-item-combination" style="display: none">
+                                                                    <span class="cart-provider-time" data-provider="0"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cart-item-price-holder">R$ 5,37</div>
+                                                        <div class="cart-item-amount-holder">
+                                                            <div class="cart-item-amount-inner">
+                                                                <a href="javascript:;" class="cart-item-decrement" title="Diminuir a quantidade">
+                                                                    <span class="icon-minus">
+
+                                                                    </span>
+                                                                </a>
+                                                                <input data-row="1" id="amount1" alt="number" class="cart-item-amount" type="text" value="1">
+                                                                <a href="javascript:;" class="cart-item-increment" title="Aumentar a quantidade">
+                                                                <span class="icon-plus">
+
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-item-total-holder">R$ 5,37</div>
+                                                    <div class="cart-item-remove-holder">
+                                                        <a href="javascript:;" class="cart-item-remove" title="Remover este produto?">
+                                                            <span class="btn-remove-icon">
+                                                                
+                                                            </span><span class="hide-on-desktop">Remover</span>
+                                                        </a>
+                                                        <span class="cart-item-remove-loading product-loading" style="display: none;">
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    <h3>Para finalizar a compra, informe seu e-mail.</h3>
+                                        <div class="cart-email-wrapper">
+                                            <form action="carrinho" id="form_email" method="post" accept-charset="UTF-8">
+                                                <div style="display: none">
+                                                <input type="hidden" name="_method" value="POST">
+                                                </div>
+                                            <input name="data[CatalogoCarrinho][email]" placeholder="informe seu e-mail" required="required" id="CatalogoEmail" type="email">
+                                            <button class="cart-slider-submit btn" onclick="gtag('event', 'generate_lead');">
+                                                <span class="btn-icon"></span>
+                                                <span class="btn-text btn-dbclick" id="cart-email-btn">Continuar</span>
+                                            </button>
+                                        </form>
+                                        </div>
+                                        <h4>Usamos seu e-mail de forma 100% segura para:</h4>
+                                        <div class="list-item-wrapper-center">
+                                            <ul class="list-item">
+                                                <li>Identificar seu perfil</li>
+                                                <li>Notificar sobre o andamento do seu pedido</li>
+                                                <li>Gerenciar seu histórico de compras</li>
+                                                <li>Acelerar o preenchimento de suas informações</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                <li id="cart-final" style="float: left; list-style: none; position: relative; width: 1150px;" class="one-step-checkout-item"></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+</body>
+</html>
+

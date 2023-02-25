@@ -4,18 +4,15 @@
 
 
 * {
-    font-family: "Lato";
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Lato";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   
     
 }
 
-body {
-  background-color: #dbcea6;
 
-}
 
 h1 {
   color: #FFF;
@@ -50,93 +47,6 @@ header {
 
 }
 
-main {
-  background-color: #dbcea6;
-  
-}
-
-
-
-#logo {
-  display: inline-block;
-  margin-right: 5rem;
-    
-}
-
-
-form {
-  margin-left: 50px;
-  
-}
-
-
-
-#inner-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#brand {
-  padding: 1rem;
-}
-
-
-
-#navbar {
-  float: left;
-  display: flex;
-  gap: 1rem;
-  text-transform: uppercase;
-  margin-right: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 20px;
-    
-}
-
-#navbar a {
-  color: #fff;
-  gap: 1rem;
-  text-transform: uppercase;
-  margin-right: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-
-.containerA{
-  display: flex;
-  justify-content: space-around;
-
-}
-
-
-
-
-.indexProductsTitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 9rem;
-  text-transform: uppercase;
-}
-
-
-
-
-
-
-
-.indexProductsProducts img {
-  display: inline-block;
-  width: 18rem;
-  
-}
 
 
 
