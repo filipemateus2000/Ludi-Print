@@ -19,97 +19,67 @@ header {
     width: 100%;
 }
 
-
-
-
-
-button {
-    color: #000080;
-    
+body {
+    background-color: #00a8ff;
 
 }
 
+.search-box {
+    background-color: aqua;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
 
-nav {
+.search-btn {
+    color: aqua;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #07d3ff;
     display: flex;
-    height: 80px;
-    width: 100%;
-    background-color: #0000CD;
+    justify-content: center;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
 }
 
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 240px;
+}
+
+
+li {
+    color: #FFFF;
+
+
 }
 
 nav ul li {
-    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+
 
 }
 
-nav ul li a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-}
-
-nav ul.open {
-    left: 0;
-}
-
-nav ul li a.active,
-nav ul li a.hover{
-    background-color: #00BFFF;
-}
-
-div .container i{
-    color: #f2f2f2;
-    cursor: pointer;
-    display: none;
-    width: 100rem;
-    height: 100rem;
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    
 }
 
 
 
 
-
-@media (max-width: 920px){
-    div .container i{
-        display: block;
-    }
-    nav ul{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background-color: #003840;
-        height: 100%;
-        display: block;
-        transition: all 0.3s ease;
-    }
-    nav ul.open{
-        left: 0;
-    }
-    nav ul li{
-        width: 100%;
-        margin: 50px 0;
-    }
-    nav ul li a {
-        font-size: 23px;
-    }
-    nav ul li a.active,
-    nav ul li a.hover{
-        background: none;
-        color: #00BFFF;
-    }
-}
