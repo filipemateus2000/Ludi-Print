@@ -6,17 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Cliente | Ludi Print</title>
     <link rel="stylesheet" href="../css/cadastro.css" />
-    <link rel="shortcut icon" href="../img/favicon.ico" type="imagem/x-icon" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="imagem/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family= Lato: wght @300 & display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <header>
+        <a href="#">
+            <img src="../img/favicon.ico" alt="" width="100rem" height="100rem">
+        </a>
+        <h1>NOVO CADASTRO</h1>
+        
+    </header>
+    <h2>DADOS PESSOAIS</h2>
     <div id="main-container">
-        <h1>Cadastre-se para acessar um sistema</h1>
+        
         <form id="register-form">
+           
             <div class="full-box">
-
+                <input type="checkbox" name="btn-submit" value="Registrar">
+                <label for="agreement">Pessoa Fisica</label>
+            
+            
+                <input type="checkbox" name="btn-submit" value="Registrar">
+                <label for="agreement">Pessoa Juridica</label>
             </div>
+            </div>  
+
+           
+            
+            <div class="document">
+                <label for="cpf">CPF</label>
+                <input type="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF">
+            
+            
+    
+                <label for="rg">RG</label>
+                <input type="rg" name="rg" id="rg" placeholder="Digite seu RG">
+            </div>
+            
+            <div class="name">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu Nome">
+            
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="name" placeholder="Digite seu Sobrenome">
+            </div>
+
+            <div class="date">
+                <label for="borndate">Data de Nascimento</label>
+                <input id="date" type="date">
+            </div>
+            
+            <div class="contact">
+                <label for="telephone">Telefone</label>
+                <input type="numbertelephone" name="numbertelephone" id="numbertelephone" placeholder="Telefone">
+            
+                <label for="telephonecomercial">Tel. Comercial</label>
+                <input type="numbertelephone" name="numbertelephone" id="numbertelephone" placeholder="Telefone Comercial">
+            
+                <label for="numbersmart">Celular</label>
+                <input type="numbersmart" name="numbersmart" id="numbersmart" placeholder="Celular">
+            </div>
+                     
+            <div class="email">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+        
+                <label for="email">Confirme seu E-mail</label>
+                <input type="emailconfirmation" name="emailconfirmation" id="emailconfirmation" placeholder="Confirme seu E-mail">
+            </div>
+
+            <div class="senha">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            
+                <label for="passconfirmation">Confirme sua Senha</label>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua Senha">
+            </div>
+            
+    
+
+            <h1>ENDEREÇO</h1>
+            
+            <div class="addressA">
+                <label for="cep">CEP</label>
+                <input type="CEP" name="cep" id="cep" placeholder="CEP">
+            
+                <label for="andress">LOGRADOURO</label>
+                <input type="logradouro" name="logradouro" id="logradouro" placeholder="LOGRADOURO">
+            
+
+                <label for="number">NUMERO</label>
+                <input type="logradouronumber" name="number" id="number" placeholder="NUMERO">
+            </div>
+
+            <div class="addressB">
+                <label for="complemento">COMPLEMENTO</label>
+                <input type="complementobar" name="complemento" id="complemento" placeholder="COMPLEMENTO">
+            
+                <label for="bairro">BAIRRO</label><br>
+                <input type="bairrobar" name="bairro" id="bairro" placeholder="BAIRRO">
+            </div>
+            
+            <div class="citystate">
+                <label for="city">CIDADE</label>
+                <input type="citybar" name="city" id="city" placeholder="CIDADE">
+
+        
+                <label for="state" display="inline">ESTADO</label>
+                <input type="statebar" name="state" id="state" placeholder="ESTADO">
+            </div>
+
+        
+          
+            <div class="full-box">
+                <input type="checkbox" name="btn-submit" value="Registrar">
+                <label for="agreement">Eu li e aceito os <a href="#"> Termos de Uso</a></label>
+            </div>
+
+
+            <button>
+            <a href="http://127.0.0.1:5502/html/login.html">SALVAR</a>
+            </button>
+            
+
+            <button>CANCELAR</button>
+       
         </form>
+
+        <form class="peoplejuridica">
+
+
+
+        </form>
+
+
     </div>
     <script src="js/script.js"></script>
 </body>

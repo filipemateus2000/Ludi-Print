@@ -1,9 +1,140 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;600&display=swap');
 
 * {
-    background-color: #415aca;
+    font-family: "Poppins";
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
+body {
+    background-color: #00BFFF;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    padding-top: 10px;
+}
+
+
+
+
+label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 16px 0px;
+    margin: 25px;
+    box-shadow: 0px 10px 40px -12px #000080;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    
+    letter-spacing: 3px;
+    color: #000080;
+    width: 300px;
+}
+
+input::placeholder{
+    color: black;
+
+}
+
+
+h1 {
+    color: #000080;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+h2 {
+    color: #000080;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.full-box {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    
+}
+
+.document {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.senha {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.addressA {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.addressB {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.citystate {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.date {
+    display: flex;
+    justify-content: center;   
+}
