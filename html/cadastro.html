@@ -18,13 +18,13 @@
         <h1>NOVO CADASTRO</h1>
         
     </header>
-    <h2>DADOS PESSOAIS</h2>
+    
     <div id="main-container">
         
         <form id="register-form">
            
             <div class="full-box">
-                <input type="checkbox" name="btn-submit" value="Registrar">
+                <input type="checkbox" name="btn-submit" value="Registrar" style="padding: 10px">
                 <label for="agreement">Pessoa Fisica</label>
             
             
@@ -36,53 +36,64 @@
            
             
             <div class="document">
-                <label for="cpf">CPF</label>
-                <input type="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF">
-            
+                <label for="cpf">CPF
+                <input style="display: block" type="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF">
+            </label>
             
     
-                <label for="rg">RG</label>
-                <input type="rg" name="rg" id="rg" placeholder="Digite seu RG">
+                <label for="rg">RG
+                <input style="display: block" type="rg" name="rg" id="rg" placeholder="Digite seu RG">
+            </label>
             </div>
             
             <div class="name">
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name" placeholder="Digite seu Nome">
+                <label for="name">Nome
+                <input style="display: block"  type="text" name="name" id="name" placeholder="Digite seu Nome">
+            </label>
             
-                <label for="lastname">Sobrenome</label>
-                <input type="text" name="lastname" id="name" placeholder="Digite seu Sobrenome">
+                <label for="lastname">Sobrenome
+                <input style="display: block" type="text" name="lastname" id="name" placeholder="Digite seu Sobrenome">
+            </label>
             </div>
 
             <div class="date">
-                <label for="borndate">Data de Nascimento</label>
-                <input id="date" type="date">
+                <label for="borndate">Data de Nascimento
+                <input style="display: block" id="date" type="date">
+            </label>
             </div>
             
             <div class="contact">
-                <label for="telephone">Telefone</label>
-                <input type="numbertelephone" name="numbertelephone" id="numbertelephone" placeholder="Telefone">
+                <label for="telephone">Telefone
+                <input style="display: block"  type="numbertelephone" name="numbertelephone" id="numbertelephone" placeholder="Telefone">
+            </label>
             
-                <label for="telephonecomercial">Tel. Comercial</label>
-                <input type="numbertelephone" name="numbertelephone" id="numbertelephone" placeholder="Telefone Comercial">
-            
-                <label for="numbersmart">Celular</label>
-                <input type="numbersmart" name="numbersmart" id="numbersmart" placeholder="Celular">
+                <label for="telephonecomercial">Tel. Comercial
+                <input style="display: block" type="numbertelephone" name="numbertelephone" id="numbertelephone" placeholder="Telefone Comercial">
+            </label>
+
+                <label for="numbersmart">Celular
+                <input style="display: block" type="numbersmart" name="numbersmart" id="numbersmart" placeholder="Celular">
+                </label>
             </div>
                      
             <div class="email">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+                <label for="email">E-mail
+                <input style="display: block" type="email" name="email" id="email" placeholder="Digite seu E-mail">
+            </label>
         
-                <label for="email">Confirme seu E-mail</label>
-                <input type="emailconfirmation" name="emailconfirmation" id="emailconfirmation" placeholder="Confirme seu E-mail">
+                <label for="email">Confirme seu E-mail
+                <input style="display: block" type="emailconfirmation" name="emailconfirmation" id="emailconfirmation" placeholder="Confirme seu E-mail">
+                </label>
             </div>
 
             <div class="senha">
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
-            
-                <label for="passconfirmation">Confirme sua Senha</label>
-                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua Senha">
+                <label for="password">Senha
+                <input style="display: block"type="password" name="password" id="password" placeholder="Digite a sua senha">
+            </label>
+
+                <label for="passconfirmation">Confirme sua Senha
+                <input style="display: block" type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua Senha">
+            </label>
             </div>
             
     
@@ -90,48 +101,58 @@
             <h1>ENDEREÇO</h1>
             
             <div class="addressA">
-                <label for="cep">CEP</label>
-                <input type="CEP" name="cep" id="cep" placeholder="CEP">
+                <label for="cep">CEP
+                <input style="display: block" type="CEP" name="cep" id="cep" placeholder="CEP">
+                </label>
             
-                <label for="andress">LOGRADOURO</label>
-                <input type="logradouro" name="logradouro" id="logradouro" placeholder="LOGRADOURO">
+                <label for="andress">LOGRADOURO
+                <input style="display: block" type="logradouro" name="logradouro" id="logradouro" placeholder="LOGRADOURO">
+            </label>
             
 
-                <label for="number">NUMERO</label>
-                <input type="logradouronumber" name="number" id="number" placeholder="NUMERO">
+                <label for="number">NUMERO
+                <input style="display: block" type="logradouronumber" name="number" id="number" placeholder="NUMERO">
+                </label>
             </div>
 
             <div class="addressB">
-                <label for="complemento">COMPLEMENTO</label>
-                <input type="complementobar" name="complemento" id="complemento" placeholder="COMPLEMENTO">
+                <label for="complemento">COMPLEMENTO
+                <input style="display: block"  type="complementobar" name="complemento" id="complemento" placeholder="COMPLEMENTO">
+            </label>
             
-                <label for="bairro">BAIRRO</label><br>
-                <input type="bairrobar" name="bairro" id="bairro" placeholder="BAIRRO">
+                <label for="bairro">BAIRRO
+                <input style="display: block" type="bairrobar" name="bairro" id="bairro" placeholder="BAIRRO">
+                </label>
             </div>
             
             <div class="citystate">
-                <label for="city">CIDADE</label>
-                <input type="citybar" name="city" id="city" placeholder="CIDADE">
-
+                <label for="city">CIDADE
+                <input style="display: block" type="citybar" name="city" id="city" placeholder="CIDADE">
+                </label>
         
-                <label for="state" display="inline">ESTADO</label>
-                <input type="statebar" name="state" id="state" placeholder="ESTADO">
+                <label for="state" display="inline">ESTADO
+                <input style="display: block" type="statebar" name="state" id="state" placeholder="ESTADO">
+            </label>
             </div>
-
-        
+ 
           
             <div class="full-box">
                 <input type="checkbox" name="btn-submit" value="Registrar">
                 <label for="agreement">Eu li e aceito os <a href="#"> Termos de Uso</a></label>
             </div>
 
+            <div class="savecancel">
 
             <button>
             <a href="http://127.0.0.1:5502/html/login.html">SALVAR</a>
             </button>
             
 
-            <button>CANCELAR</button>
+            <button>
+            <a href="#">CANCELAR</a>
+            </button>
+
+        </div>
        
         </form>
 
@@ -141,8 +162,16 @@
 
         </form>
 
+        <footer>
+            <a href="">
+                <img src="../img/favicon.ico" alt="" width="100rem" height="100rem">
+            </a>
+
+
+        </footer>
+
 
     </div>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
