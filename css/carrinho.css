@@ -14,21 +14,26 @@ header {
 
 }
 
+
+
 h1 {
     color: #000080;
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 ul {
-    display: inline-block;
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    max-width: 1900px;
+
 }
 
-li .product {
-    color: #000080;
+li {
+    text-decoration: none;
+    list-style: none;
 }
 
 
@@ -44,3 +49,44 @@ footer {
     align-items: center;
 
 }
+
+.container-car {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    max-width: 1800px;
+    margin: 0 100px;
+    
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    border-color: yellow;
+}
+
+input {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    justify-content: center;
+    border: none;
+    border-color: yellow;
+}
+
+fieldset {
+    border: none;
+    background-color: yellow;
+    border-color: #000000;
+}
+
+.container-button {
+    display: flex;
+
+}
+
