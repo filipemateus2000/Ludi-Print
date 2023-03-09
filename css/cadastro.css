@@ -224,3 +224,9 @@ footer {
     align-items: center;
 
 }
+
+.backToStart {
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}

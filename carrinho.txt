@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Ludi Print </title>
+    <link rel="stylesheet" href="../css/carrinho.css"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="imagem/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+    <header>
+        <a href="http://127.0.0.1:5502/html/login.html">
+            <img src="../img/favicon.ico" alt="" width="90rem" height="90rem">
+    </a>
+</header>
+
+<body>
+
+    <h1>Meu Carrinho</h1>
+
+
+        <div class="information">
+            <ul>
+                <li class="product">PRODUTO</li>
+                <li class="delivery">ENTREGA</li>
+                <li class="price">PREÇO</li>
+                <li class="amount">QUANTIDADE</li>
+                <li class="total">TOTAL</li>
+                <li class="removeproduct">REMOVER<br>PRODUTO</br></li>
+            </ul>
+        </div>
+
+
+    <div class="container-car">
+
+         <div class="indexProductsProducts">
+            <a href="#">
+                <img src="../img/produtos/Faber-Castler/Lapis/Ecolapis de Cor Grip 24 Cores Faber Castell - Foto Lapis.png" alt="" width="150rem" height="150rem">
+            </div>
+                <div class="indexProductsDescription">Ecolapis de Cor Grip 24 Cores<br>Produto fornecido e entregue por Ludi Print
+                </div>
+
+            <div class="indexProductsPrice">R$ 60,00</div>
+
+                <div class="indexProductsSubPrice"><sub>6X de R$ 10,00 Sem juros</sub></div>
+                </a>
+
+                <p>a Calcular</p>
+
+                <p>R$ 60,00<br>6X de R$ 10,00<br>Sem juros</p>
+
+            <div class="button">
+                
+                <button onclick="this.nextElementSibling.value++">
+                    +
+                   </button>
+
+                   <input style="width: 40px;" type="number" value="1"/>
+
+                   <button id="menos" onclick="this.previousElementSibling.value--">
+                    -
+                </button>
+                
+            </div>
+
+                <p>60,00</p>
+
+                <button onclick="this.nextElementSibling.value++" id="buttonX">
+                    X
+                </button>
+
+            </div>
+    
+                
+
+</div>
+
+<footer>
+    
+
+</footer>
+
+    
+</body>
+</html>
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;600&display=swap');
+
+
+* {
+    font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #00BFFF;
+
+
+}
+
+
+
+h1 {
+    color: #000080;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1900px;
+
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+li .total {
+    display: flex;
+
+}
+
+li .removeproduct {
+    display: flex;
+
+}
+
+
+footer {
+    background-color: #00BFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-car {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    max-width: 1800px;
+    margin: 0 100px;
+    
+}
+
+.indexProductsProducts {
+    display: flex;
+    
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    border-color: yellow;
+}
+
+input {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    justify-content: center;
+    border: none;
+    border-color: yellow;
+}
+
+
+
+.container-button {
+    display: flex;
+
+}
+
+

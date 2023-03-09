@@ -45,8 +45,14 @@ table {
 
 }
 
+tbody {
+    tr {
+        td {
+            padding: 15px 0;
+        }
+    }
 
-
+}
 
 tr {
     border-bottom: 3px solid #eee;
@@ -77,8 +83,4 @@ th {
 
 }
 
-.category {
-    color: #666;
-
-}
-
+    

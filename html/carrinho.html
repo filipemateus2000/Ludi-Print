@@ -10,73 +10,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
+<body>
     <header>
         <a href="http://127.0.0.1:5502/html/login.html">
             <img src="../img/favicon.ico" alt="" width="90rem" height="90rem">
     </a>
 </header>
-
-<body>
-
-    <h1>Meu Carrinho</h1>
-
-
-        <div class="information">
-            <ul>
-                <li class="product">PRODUTO</li>
-                <li class="delivery">ENTREGA</li>
-                <li class="price">PREÇO</li>
-                <li class="amount">QUANTIDADE</li>
-                <li class="total">TOTAL</li>
-            </ul>
+    <main>
+        <div class="page-title">Meu Carrinho</div>
+        <div class="content">
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quatidade</th>
+                            <th>Total</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <div class="product">
+                                <img src="../img/produtos/Faber-Castler/Lapis/Ecolapis de Cor Grip 24 Cores Faber Castell.png" alt="" width="200rem" height="200rem">
+                                <div class="info">
+                                    <div class="name">Nome do Produto</div>
+                                    <div class="category">Categoria</div>
+                                    
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 60,00</td>
+                        <td>
+                            <div class="qty">
+                                <button>-</button>
+                                <span>2</span>
+                                <button>+</button>
+                            </div>
+                        </td>
+                        <td>R$ 120,00</td>
+                        <td>
+                            <button><i class='bx bx-x'></i></button>
+                        </td>
+                    </tbody>
+                </table>
+            </section>
+            <aside>Resulmo das Compras</aside>
         </div>
 
-
-    <div class="container-car">
-
-         <div class="indexProductsProducts">
-            <a href="#">
-                <img src="../img/produtos/Faber-Castler/Lapis/Ecolapis de Cor Grip 24 Cores Faber Castell - Foto Lapis.png" alt="" width="150rem" height="150rem">
-            </div>
-                <div class="indexProductsDescription">Ecolapis de Cor Grip 24 Cores<br></div>
-
-            <div class="indexProductsPrice">R$ 60,00</div>
-
-                <div class="indexProductsSubPrice"><sub>6X de R$ 10,00 Sem juros</sub></div>
-                </a>
-
-                <p>a Calcular</p>
-
-                <p>R$ 60,00<br>6X de R$ 10,00<br>Sem juros</p>
-
-                <fieldset>
-                <button onclick="this.nextElementSibling.value++">
-                    +
-                   </button>
-
-                   <input style="width: 40px;" type="number" value="1"/>
-
-                   <button id="menos" onclick="this.previousElementSibling.value--">
-                    -
-                </button>
-                </fieldset>
-
-                <p>60,00</p>
-
-            </div>
-    
-                
-
-</div>
-
-<footer>
-    
-
-</footer>
-
-    
+     
+    </main>
 </body>
 </html>
 
