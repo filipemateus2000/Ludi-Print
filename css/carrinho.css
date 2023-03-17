@@ -1,81 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;600&display=swap');
-
-@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;600&display=swap");
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
 * {
-    font-family: 'Poppins' sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 header {
-    background-color: #00BFFF;
-
-
+  background-color: #00BFFF;
 }
 
 .page-title {
-    color: #000080;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-    padding: 50px 0;
-    font-size: 30px;
+  color: #000080;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding: 50px 0;
+  font-size: 30px;
 }
 
 .content {
-    display: flex;
- 
+  display: flex;
 }
 
 section {
-    flex: 1;
-
+  flex: 1;
 }
 
 aside {
-    background: #000080;
-    min-width: 250px;
+  background: #000080;
+  min-width: 250px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-
+  width: 100%;
+  border-collapse: collapse;
 }
-
-tr {
-    border-bottom: 3px solid #eee;
+table thead tr {
+  border-bottom: 3px solid #eee;
 }
-
-th {
-    text-align: left;
-    padding-bottom: 16px;
-    text-transform: uppercase;
-    color: black;
+table thead tr th {
+  text-align: left;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #666;
+}
+table tbody tr {
+  border-bottom: 3px solid #eee;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table tbody tr td {
+  padding: 15px 0;
 }
 
 .product {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .info {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .img {
-    border-radius: 6px;
+  border-radius: 6px;
 }
 
 .name {
-    font-size: 20px;
-
-}
-
-.category {
-    color: #666;
-
-}
-
+  font-size: 20px;
+}/*# sourceMappingURL=CARRINHO.css.map */

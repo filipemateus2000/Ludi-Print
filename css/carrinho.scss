@@ -39,25 +39,33 @@ aside {
 table {
     width: 100%;
     border-collapse: collapse;
-}
 
-tbody {
-    tr {
-        td {
-            padding: 15px 0;
+
+    thead {
+        tr {
+            border-bottom: 3px solid #eee;
+            th {
+                text-align: left;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+                color: #666;
+            }
         }
     }
-}
 
-tr {
-    border-bottom: 3px solid #eee;
-}
+    tbody {
+        tr {
+            border-bottom: 3px solid #eee;
 
-th {
-    text-align: left;
-    padding-bottom: 16px;
-    text-transform: uppercase;
-    color: black;
+            &:last-child {
+                border: 0;
+            }
+
+            td {
+                padding: 15px 0;
+            }
+        }
+    }
 }
 
 .product {
