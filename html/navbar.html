@@ -4,40 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ludi Print | Menu</title>
+    <title>Ludi Print</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="imagem/x-icon" /> 
     <link rel="stylesheet" href="../css/navbar.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family= Lato: wght @300 & display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../img/favicon.ico" alt="" width="100rem" height="100rem">
+            </div>
+
+           <form action="/busca" id="form-search-header" method="post" accept-charset="utf-8">
+            
+            <input type="hidden" name="_method" value="POST"></div>
+            <div class="search-inner">
+                <input name="data[Search][filter]" autocomplete="off" class="search-field" placeholder="o que você procura?" type="text" id="SearchFilter"><button class="btn btn-search" type="submit"><span><i class='bx bx-search-alt'></i></span></button></div></form>
+
+            <div class="login">
+                <i class='bx bx-user'></i>
+            </div>
+
+            
+            <div class="car">
+                <i class='bx bx-cart'></i>
+            </div>
+        
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Time</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
     
-    <nav>
-        <div class="logo">
-            <a href="#">
-            <img src="../img/logo/Logo Final.png" alt="" width="50rem" height="50rem">
-        </a>
-        </div>
-
-        <div class="menu-btn">
-            <i class="fa fa-bars fa-2x"></i>
-        </div>
-
-        <ul>
-            <li><a href="#" class="active">Inicio</a></li>
-            <li><a href="#"> Sobre</a></li>
-            <li><a href="#"> Serviços</a></li>
-            <li><a href="#"> Portifólio</a></li>
-            <li><a href="#"> Contato</a></li>
-        </ul>
-
-
-
-
-
-    </nav>
-
 </body>
 </html>
