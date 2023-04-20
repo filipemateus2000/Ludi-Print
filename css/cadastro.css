@@ -31,6 +31,8 @@ img {
 label {
     color: white;
     margin-bottom: 30px;
+    
+    
 }
 
 input {
@@ -58,8 +60,6 @@ h1 {
     padding-top: 20px;
 }
 
-
-
 .check-box {
     display: flex;
     flex-wrap: nowrap;
@@ -75,7 +75,12 @@ h1 {
 .check-box input {
     height: 20px;
     margin: 0 100px;
+    margin-left: 10px;
 }
+
+
+
+
 
 .document {
     display: flex;
@@ -190,6 +195,7 @@ h1 {
 .date {
     display: flex;
     justify-content: center;   
+    padding-left: 10px;
 }
 
 .date input {
@@ -208,7 +214,7 @@ h1 {
 }
 
 button {
-    background-color: #000080;
+    background-color: #00BFFF;    
     color: white;
     box-shadow: 0px 10px 40px -12px #000080;
     border-radius: 8px;
@@ -233,5 +239,8 @@ footer {
     width: 100%;
     color: white;
     cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
     
 }
+

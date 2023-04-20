@@ -28,6 +28,10 @@ header {
  
 }
 
+
+
+
+
 li {
   list-style-type: none;
 }
@@ -141,11 +145,11 @@ h3  {
 }
 
 .indexProductsProducts {
-  width: 21rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 21rem;
 }
 
 .indexProductsProducts a {
@@ -182,6 +186,7 @@ footer {
   background-color: #000080;
   color: aliceblue;
   width: 100%;
+  font-size: 20px;
 }
 
 .logo{
@@ -234,7 +239,7 @@ ul li{
 
 
 
-.footer-col ul li a:hover{
+.footer-col ul li a:hover {
   color: #cecdcd;
   padding-left: 10px;
 }
@@ -262,6 +267,8 @@ ul li{
   width: 100%;
   background-color: #000080;
   color: aliceblue;
+  font-size: 20px;
+  border-color: #000;
 
 }
 
