@@ -14,6 +14,8 @@
 
 $blue: #000880;
 $red : #eb4d4b;
+$yellow: #FFFF00;
+$gold: #FFD700;
 $black : #130f40;
 $light-color : #666;
 $light-bg : #f9f9f9;
@@ -51,7 +53,7 @@ html{
     }
 
     &::-webkit-scrollbar-thumb{
-        background: $red;
+        background: $gold;
         border-radius: 5rem;
     }
 }
@@ -113,7 +115,7 @@ section {
 
         a{
             font-size: 1.7rem;
-            color: $light-color;
+            color: $gold;
             margin:0 1rem;
 
             &:hover{
@@ -205,9 +207,39 @@ section {
             }
         }
     }
+
+    .swiper-button-next {
+        top: 90%;
+        right: 2rem;
+    }
+
+    .swiper-button-prev {
+        top: 90%;
+        right: 8rem;
+        left: auto;
+    }
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    height: 5rem;
+    width: 5rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: $box-shadow;
+    border: $border;
+    color: $black;
 
+    &:hover {
+        background: $black;
+        color: red;
+    }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
 
 @media (max-width: 991px) {
 
@@ -269,4 +301,44 @@ section {
     }
 }
 
+.banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+        .banner {
+            flex: 1 1 42rem;
+            overflow: hidden;
+            height: 30rem;
+            position: relative;
 
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            
+            &:hover img {
+                transform: scale(1.2);
+            }
+
+            .content {
+                position: absolute;
+                top: 50%; right: 5rem;
+                transform: translateY(-50%);
+
+                span {
+                    font-size: 2rem;
+                    color: $light-color;
+                }
+
+                h3 {
+                    font-size: 3.2rem;
+                    color: $black;
+                    padding-top: .5rem;
+                }
+            }
+    }
+}

@@ -36,7 +36,7 @@ html::-webkit-scrollbar-track {
   background: #fff;
 }
 html::-webkit-scrollbar-thumb {
-  background: #eb4d4b;
+  background: #FFD700;
   border-radius: 5rem;
 }
 
@@ -90,7 +90,7 @@ section {
 }
 .header .navbar a {
   font-size: 1.7rem;
-  color: #666;
+  color: #FFD700;
   margin: 0 1rem;
 }
 .header .navbar a:hover {
@@ -161,6 +161,36 @@ section {
   color: #130f40;
   padding-top: 0.5rem;
 }
+.home .swiper-button-next {
+  top: 90%;
+  right: 2rem;
+}
+.home .swiper-button-prev {
+  top: 90%;
+  right: 8rem;
+  left: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  color: #130f40;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #130f40;
+  color: red;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+}
 
 @media (max-width: 991px) {
   html {
@@ -209,4 +239,41 @@ section {
   html {
     font-size: 50%;
   }
+}
+.banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.banner-container .banner {
+  flex: 1 1 42rem;
+  overflow: hidden;
+  height: 30rem;
+  position: relative;
+}
+.banner-container .banner img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner-container .banner:hover img {
+  transform: scale(1.2);
+}
+.banner-container .banner .content {
+  position: absolute;
+  top: 50%;
+  right: 5rem;
+  transform: translateY(-50%);
+}
+.banner-container .banner .content span {
+  font-size: 2rem;
+  color: #666;
+}
+.banner-container .banner .content h3 {
+  font-size: 3.2rem;
+  color: #130f40;
+  padding-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

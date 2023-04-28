@@ -11,11 +11,120 @@
 
 
 
-header {
-    background-color: #00BFFF;
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    box-shadow: $box-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background:#fff;
+
+
+        i{
+            color: $blue;
+        }
+    
+
+    .navbar{
+
+        a{
+            font-size: 1.7rem;
+            color: $light-color;
+            margin:0 1rem;
+
+            &:hover{
+                color: $red;
+            }
+        }
+
+    }
+
+    .icons div,
+    .icons a{
+        font-size: 2.5rem;
+        margin-left: 2rem;
+        @extend %text-stroke;
+        
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .search-form{
+        position: absolute;
+        top:115%; right:-105%;
+        width:50rem; height:5.5rem;
+        background:#fff;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: $box-shadow;
+        border:$border;
+
+        &.active{
+            right:2rem;
+            transition: .4s linear;
+        }
+
+        input{
+            height:100%;
+            width:100%;
+            font-size: 1.6rem;
+            text-transform: none;
+            color:$black;
+            padding:0 1.2rem;
+        }
+
+        label{
+            font-size: 2.2rem;
+            @extend %text-stroke;
+            margin-right: 1.7rem;
+        }
+
+    }
 
 }
 
+#menu-btn{
+    display: none;
+}
+
+.home {
+    padding: 0;
+    padding-top: 7.6rem;
+
+    .home-slider {
+    
+        .slide {
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+            padding-left: 7%;
+            background-size: cover !important;
+            background-position: center !important;
+
+            .content {
+                
+                span {
+                    font-size: 2rem;
+                    color: $light-color;
+                }
+
+                h3 {
+                    font-size: 5rem;
+                    color: $black;
+                    padding-top: .5rem;
+                }
+            }
+        }
+    }
+}
 .page-title {
     color: #000080;
     display: flex;
