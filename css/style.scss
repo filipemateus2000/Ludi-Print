@@ -28,6 +28,9 @@ $box-shadow : 0 .5rem 1rem rgba(0,0,0,.1);
     gap:1.5rem;
 }
 
+
+
+
 %text-stroke{
     color:#fff;
     cursor: pointer;
@@ -63,10 +66,11 @@ section{
 }
 
 .heading{
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: $black;
     padding-bottom: 2rem;
     text-align: center;
+    color: $
 
     span{
         color:$red;
@@ -294,13 +298,6 @@ section {
 
 }
 
-@media (max-width: 450px) {
-
-    html {
-        font-size: 50%;
-    }
-}
-
 .banner-container {
     display: flex;
     flex-wrap: wrap;
@@ -340,5 +337,75 @@ section {
                     padding-top: .5rem;
                 }
             }
+    }
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 50%;
+
+    }
+
+    .banner-container .banner .content {
+        right: 2rem;
+   
+        h3 {
+            font-size: 2rem;
+        }
+    }
+}
+
+.products {
+
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 2rem;
+
+        .buttons {
+            font-size: 1.7rem;
+            color: $black;
+            cursor: pointer;
+
+            &:hover,
+            &.active {
+                color: $gold;
+
+            }
+        }
+    }
+
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+
+        .box {
+            flex: 1 1 26rem;
+            border-radius: .5rem;
+            overflow: hidden;
+            position: relative;
+            box-shadow: $box-shadow;
+            border: $border;
+
+            .image {
+                height: 35rem;
+                width: 100%;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        
+            &:hover {
+                
+            }
+        }
     }
 }
