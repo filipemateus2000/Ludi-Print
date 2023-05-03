@@ -12,13 +12,13 @@
   transition: 0.2s linear;
 }
 
-.header .search-form label, .header .icons div,
+.products .box-container .box .icons a, .header .search-form label, .header .icons div,
 .header .icons a {
   color: #fff;
   cursor: pointer;
   -webkit-text-stroke: 0.1rem #130f40;
 }
-.header .search-form label:hover, .header .icons div:hover,
+.products .box-container .box .icons a:hover, .header .search-form label:hover, .header .icons div:hover,
 .header .icons a:hover {
   -webkit-text-stroke: 0.1rem #eb4d4b;
 }
@@ -46,12 +46,12 @@ section {
 
 .heading {
   font-size: 4rem;
-  color: #130f40;
+  color: #000880;
   padding-bottom: 2rem;
   text-align: center;
 }
-.heading color span {
-  color: #eb4d4b;
+.heading span {
+  color: #FFD700;
 }
 
 .btn {
@@ -90,11 +90,11 @@ section {
 }
 .header .navbar a {
   font-size: 1.7rem;
-  color: #FFD700;
+  color: #000880;
   margin: 0 1rem;
 }
 .header .navbar a:hover {
-  color: #eb4d4b;
+  color: #FFD700;
 }
 .header .icons div,
 .header .icons a {
@@ -235,6 +235,34 @@ section {
     padding-left: 2rem;
   }
 }
+.heading-cicle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: #000880;
+  font-size: 3rem;
+}
+.heading-cicle span {
+  color: #FFD700;
+  padding-right: 10rem;
+}
+
+.banner-cicle {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10rem;
+}
+.banner-cicle .laser {
+  display: flex;
+}
+.banner-cicle img {
+  display: flex;
+  border-radius: 30%;
+  border-top-right-radius: #000880;
+}
+
 .banner-container {
   display: flex;
   flex-wrap: wrap;
@@ -277,6 +305,9 @@ section {
   html {
     font-size: 50%;
   }
+  .heading {
+    font-size: 3rem;
+  }
   .banner-container .banner .content {
     right: 2rem;
   }
@@ -284,11 +315,18 @@ section {
     font-size: 2rem;
   }
 }
+@keyframes fadeUp {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+}
 .products .filter-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
+  gap: 2rem;
 }
 .products .filter-buttons .buttons {
   font-size: 1.7rem;
@@ -312,6 +350,37 @@ section {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
 }
+.products .box-container .box.hide {
+  display: none;
+}
+.products .box-container .box.active {
+  animation: fadeUp 0.4s linear;
+}
+.products .box-container .box .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  height: 35rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 0.5rem;
+  transform: scale(0);
+  z-index: 1;
+}
+.products .box-container .box .icons a {
+  font-size: 2rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+.products .box-container .box:hover .icons {
+  transform: scale(1);
+}
 .products .box-container .box .image {
   height: 35rem;
   width: 100%;
@@ -322,4 +391,46 @@ section {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.products .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.products .box-container .box .content {
+  padding: 1rem 1.5rem;
+}
+.products .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #000880;
+  font-weight: normal;
+}
+.products .box-container .box .content .price {
+  padding: 0.5rem 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.products .box-container .box .content .price .amount {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: #130f40;
+}
+.products .box-container .box .content .price .cut {
+  font-size: 1.5rem;
+  -webkit-text-decoration: lightblue;
+          text-decoration: lightblue;
+  color: #130f40;
+}
+.products .box-container .box .content .price .offer {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: #130f40;
+}
+.products .box-container .box .content .stars {
+  font-size: 1.7rem;
+}
+.products .box-container .box .content .stars i {
+  color: #FFD700;
+}
+.products .box-container .box .content .stars span {
+  color: #000880;
 }/*# sourceMappingURL=style.css.map */

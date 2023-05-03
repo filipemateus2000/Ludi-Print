@@ -19,6 +19,7 @@ $gold: #FFD700;
 $black : #130f40;
 $light-color : #666;
 $light-bg : #f9f9f9;
+$whinte : #fff;
 $border : .1rem solid rgba(0,0,0,.3);
 $box-shadow : 0 .5rem 1rem rgba(0,0,0,.1);
 
@@ -31,7 +32,7 @@ $box-shadow : 0 .5rem 1rem rgba(0,0,0,.1);
 
 
 
-%text-stroke{
+%text-stroke {
     color:#fff;
     cursor: pointer;
     -webkit-text-stroke: .1rem $black;
@@ -41,7 +42,7 @@ $box-shadow : 0 .5rem 1rem rgba(0,0,0,.1);
     }
 }
 
-html{
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
@@ -61,24 +62,23 @@ html{
     }
 }
 
-section{
-    padding:2rem 9%;
+section {
+    padding: 2rem 9%;
 }
 
-.heading{
+.heading {
     font-size: 4rem;
-    color: $black;
+    color: $blue;
     padding-bottom: 2rem;
     text-align: center;
-    color: $
 
-    span{
-        color:$red;
+    span {
+        color: $gold;
     }
 
 }
 
-.btn{
+.btn {
     display: inline-block;
     margin-top: 1rem;
     padding:.9rem 3rem;
@@ -88,7 +88,7 @@ section{
     font-size: 1.7rem;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         background: $black;
     }
 }
@@ -98,7 +98,7 @@ section {
 
 }
 
-.header{
+.header {
     position: fixed;
     top:0; left:0; right:0;
     z-index: 1000;
@@ -110,7 +110,7 @@ section {
     background:#fff;
 
 
-        i{
+        i {
             color: $blue;
         }
     
@@ -119,18 +119,18 @@ section {
 
         a{
             font-size: 1.7rem;
-            color: $gold;
+            color: $blue;
             margin:0 1rem;
 
             &:hover{
-                color: $red;
+                color: $gold;
             }
         }
 
     }
 
     .icons div,
-    .icons a{
+    .icons a {
         font-size: 2.5rem;
         margin-left: 2rem;
         @extend %text-stroke;
@@ -141,7 +141,7 @@ section {
         display: flex;
     }
 
-    .search-form{
+    .search-form {
         position: absolute;
         top:115%; right:-105%;
         width:50rem; height:5.5rem;
@@ -153,12 +153,12 @@ section {
         box-shadow: $box-shadow;
         border:$border;
 
-        &.active{
+        &.active {
             right:2rem;
             transition: .4s linear;
         }
 
-        input{
+        input {
             height:100%;
             width:100%;
             font-size: 1.6rem;
@@ -167,7 +167,7 @@ section {
             padding:0 1.2rem;
         }
 
-        label{
+        label {
             font-size: 2.2rem;
             @extend %text-stroke;
             margin-right: 1.7rem;
@@ -298,6 +298,44 @@ section {
 
 }
 
+.heading-cicle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: $blue;
+    font-size: 3rem;
+
+    span {
+        color: $gold;
+        padding-right: 10rem;
+    }
+}
+
+.banner-cicle {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10rem;
+
+    .laser {
+        display: flex;
+    } 
+
+    img {
+        display: flex;
+        border-radius: 30%;
+        border-top-right-radius: #000880;
+    }
+
+   
+
+    
+
+}
+
+
+
 .banner-container {
     display: flex;
     flex-wrap: wrap;
@@ -347,6 +385,10 @@ section {
 
     }
 
+    .heading {
+        font-size: 3rem;
+    }
+
     .banner-container .banner .content {
         right: 2rem;
    
@@ -356,13 +398,23 @@ section {
     }
 }
 
+@keyframes fadeUp {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
+
+
+
 .products {
 
     .filter-buttons {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-bottom: 2rem;
+        padding-bottom: 2.5rem;
+        gap: 2rem;
 
         .buttons {
             font-size: 1.7rem;
@@ -391,6 +443,45 @@ section {
             box-shadow: $box-shadow;
             border: $border;
 
+            &.hide {
+                display: none;
+            }
+
+            &.active {
+                animation: fadeUp .4s linear;
+            }
+
+            .icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0,0,0,.7);
+                height: 35rem;
+                width: 100%;
+                position: absolute;
+                top: 0; left: 0;
+                gap: .5rem;
+                transform: scale(0);
+                z-index: 1;
+                
+
+                a {
+                    font-size: 2rem;
+                    height: 5rem;
+                    width: 5rem;
+                    line-height: 5rem;
+                    background: $whinte;
+                    border-radius: .5rem;
+                    @extend %text-stroke;
+
+                }
+
+            }
+
+            &:hover .icons {
+                transform: scale(1);
+            }
+
             .image {
                 height: 35rem;
                 width: 100%;
@@ -403,8 +494,56 @@ section {
                 }
             }
         
-            &:hover {
+            &:hover .image img {
+                transform: scale(1.1);
+            }
+        
+            .content {
+                padding: 1rem 1.5rem;
+
+                h3 {
+                    font-size: 2rem;
+                    color: $blue;
+                    font-weight: normal;
+                }
                 
+                .price {
+                    padding: .5rem 0;
+                    display: flex;
+                    gap: .5rem;
+                    align-items: center;
+                
+                    .amount {
+                        font-size: 2.2rem;
+                        font-weight: bolder;
+                        color: $black;
+                    }
+                    
+                    .cut {
+                        font-size: 1.5rem;
+                        text-decoration: lightblue;
+                        color: $black;
+                    }
+                
+                    .offer {
+                        font-size: 2.2rem;
+                        font-weight: bolder;
+                        color: $black;
+                    }
+                }
+            
+                .stars {
+                    font-size: 1.7rem;
+                
+                    i {
+                        color: $gold;
+                    }
+                
+                    span {
+                        color: $blue;
+                    }
+                }
+            
             }
         }
     }
