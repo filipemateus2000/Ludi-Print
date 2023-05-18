@@ -29,9 +29,6 @@ $box-shadow : 0 .5rem 1rem rgba(0,0,0,.1);
     gap:1.5rem;
 }
 
-
-
-
 %text-stroke {
     color:#fff;
     cursor: pointer;
@@ -301,7 +298,6 @@ section {
 .heading-cicle {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
     color: $blue;
@@ -318,6 +314,13 @@ section {
     justify-content: space-around;
     padding-bottom: 10rem;
 
+    .content {
+        display: flex;
+        justify-content: space-around;
+        
+
+    }
+
     .laser {
         display: flex;
     } 
@@ -327,11 +330,6 @@ section {
         border-radius: 30%;
         border-top-right-radius: #000880;
     }
-
-   
-
-    
-
 }
 
 
@@ -396,6 +394,17 @@ section {
             font-size: 2rem;
         }
     }
+
+    .products .box-container .box {
+        width: 100%;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
 }
 
 @keyframes fadeUp {
@@ -436,7 +445,7 @@ section {
         justify-content: center;
 
         .box {
-            flex: 1 1 26rem;
+            width: 26rem;
             border-radius: .5rem;
             overflow: hidden;
             position: relative;
@@ -454,7 +463,7 @@ section {
             .icons {
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-around;
                 background: rgba(0,0,0,.7);
                 height: 35rem;
                 width: 100%;
@@ -472,7 +481,9 @@ section {
                     line-height: 5rem;
                     background: $whinte;
                     border-radius: .5rem;
+                    padding-left: 1.5rem;
                     @extend %text-stroke;
+
 
                 }
 
@@ -548,3 +559,25 @@ section {
         }
     }
 }
+
+.deal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    background: linear-gradient(#fff 20%, $light-bg 20.1%);
+
+    .image {
+        flex: 1 1 42rem;
+    
+        img {
+            width: 40rem;
+        }
+    }
+
+    .content {
+        flex: 1 1 42rem;
+    }
+}
+
+  

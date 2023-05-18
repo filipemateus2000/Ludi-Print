@@ -238,7 +238,6 @@ section {
 .heading-cicle {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
   color: #000880;
@@ -253,6 +252,10 @@ section {
   display: flex;
   justify-content: space-around;
   padding-bottom: 10rem;
+}
+.banner-cicle .content {
+  display: flex;
+  justify-content: space-around;
 }
 .banner-cicle .laser {
   display: flex;
@@ -314,6 +317,15 @@ section {
   .banner-container .banner .content h3 {
     font-size: 2rem;
   }
+  .products .box-container .box {
+    width: 100%;
+  }
+}
+@keyframes fadeUp {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
 }
 @keyframes fadeUp {
   0% {
@@ -343,7 +355,7 @@ section {
   justify-content: center;
 }
 .products .box-container .box {
-  flex: 1 1 26rem;
+  width: 26rem;
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
@@ -359,7 +371,7 @@ section {
 .products .box-container .box .icons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background: rgba(0, 0, 0, 0.7);
   height: 35rem;
   width: 100%;
@@ -377,6 +389,7 @@ section {
   line-height: 5rem;
   background: #fff;
   border-radius: 0.5rem;
+  padding-left: 1.5rem;
 }
 .products .box-container .box:hover .icons {
   transform: scale(1);
@@ -433,4 +446,21 @@ section {
 }
 .products .box-container .box .content .stars span {
   color: #000880;
+}
+
+.deal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  background: linear-gradient(#fff 20%, #f9f9f9 20.1%);
+}
+.deal .image {
+  flex: 1 1 42rem;
+}
+.deal .image img {
+  width: 40rem;
+}
+.deal .content {
+  flex: 1 1 42rem;
 }/*# sourceMappingURL=style.css.map */
